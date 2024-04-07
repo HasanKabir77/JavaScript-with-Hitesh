@@ -30,11 +30,11 @@
 const id = Symbol('123')
 const anotherID = Symbol('123')
 
-console.log(id === anotherID );
+//console.log(id === anotherID );
 
 let heros = ["Spiderman", "Batman", "Avengers", "Pokemone", "Chota-Bheem"];
 
-console.log(heros)
+//console.log(heros)
 
 var myObj = {
     name: "Hasan Kabir",
@@ -42,11 +42,38 @@ var myObj = {
     email: "hasankabir0720@gmail.com"
 }
 
-console.log(myObj)
+//console.log(myObj)
 
 const myFunction = function()
     {
         console.log("Hello world")
     }
 
-    console.log(myFunction)
+    //console.log(myFunction)
+
+    // ************ Memory Address ************
+
+    // tow type of Memory use in JavaScript
+    // 01. Stack (Use in : Primitive)
+    // 02. Heap (Use in : Non-Primitive)
+
+let myfullname = "Muhammad hasan kabir"
+
+let anotherName = myfullname
+anotherName = "Monirul Islam"
+
+console.log(myfullname)
+console.log(anotherName)
+
+let userOne =
+{
+    email: "user1@gmail.com",
+    payCode: "12365"
+}
+
+let userTwo = userOne
+
+userTwo.email = "user2@gmail.com"
+
+console.log(userOne);
+console.log(userTwo);
