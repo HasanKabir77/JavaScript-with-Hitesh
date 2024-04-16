@@ -12,7 +12,10 @@
 
 const newname = "   Sahid Hasan    "
 console.log(newname.trim())
+console.log(newname.trimStart())
+console.log(newname.trimEnd())
 
 const url = "https://google.com/newJS%20tutorial"
 console.log(url.replace('%20', '-'));
+console.log(url.split('-'));
 
