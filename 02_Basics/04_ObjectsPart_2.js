@@ -33,5 +33,21 @@ const obj3 = {...obj1, ...obj2}
 // console.log(Object.keys(regularUser));
 
 
-console.log(Object.values(SocialMediaUser));
-console.log(Object.values(regularUser));
+// console.log(Object.values(SocialMediaUser));
+// console.log(Object.values(regularUser));
+
+//  ---------------------- Object 3rd part ----------------------
+
+const course = {
+    coursename: "JS in Hindi",
+    price: "$999",
+    Instructror: "Hitesh Choudury"
+}
+
+
+const {Instructror} = course
+console.log(Instructror);
+
+const navbar = () => {
+    
+}
