@@ -48,6 +48,4 @@ const course = {
 const {Instructror} = course
 console.log(Instructror);
 
-const navbar = () => {
-    
-}
+// ---------------------- Object Part End ----------------------
