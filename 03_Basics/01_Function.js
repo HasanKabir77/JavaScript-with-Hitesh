@@ -30,7 +30,7 @@ function userLoginMessage(username){
     // if(username === undefined)
     if(!username)
     {
-        console.log("Please Enter User Name");
+        // console.log("Please Enter User Name");
         return
     }
     return `${username} just Logged in.`
@@ -39,5 +39,26 @@ function userLoginMessage(username){
 // userLoginMessage("Hasan") // -- Function Excuted, But not return value
 
 // console.log(userLoginMessage("Hasan"))
-console.log(userLoginMessage())
+// console.log(userLoginMessage())
 
+
+//  --------------------- Video No. 20 ---------------------
+
+function calculateCartPrice(...num1)
+{
+    return num1
+}
+
+console.log(calculateCartPrice(200, 450, 550, 1520));
+
+const User = {
+    username : "Hasan",
+    price: 249
+}
+
+function handleObject(anyobject)
+{
+    console.log(`User Name is ${anyobject.username} and Price is ${anyobject.price}`);
+}
+
+handleObject(User)
