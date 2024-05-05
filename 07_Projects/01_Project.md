@@ -1,8 +1,8 @@
 #Projects Related to DOM
 
-## Solution Code
+## Solution Code of All Project's
 
-## Project 01
+## Project 01 Solution Code
 
 ```javascript
 consol.log("Hasan")
@@ -43,7 +43,7 @@ buttons.forEach( function(btn)
 
 ```
 
-## Project 02
+## Project 02 Solution Code
 
 ```Javascript
 
@@ -86,4 +86,19 @@ form.addEventListener('submit', function(evnt){
 
 });
 
+```
+
+## Project 03 Solution Code
+
+```javascript
+
+const clock = document.getElementById('clock')
+// const clock = document.querySelector('#clock') // its also work same
+
+// console.log(date.toLocaleTimeString());
+
+setInterval(function(){
+let date = new Date()
+clock.innerHTML = date.toLocaleTimeString();
+}, 1000)
 ```
