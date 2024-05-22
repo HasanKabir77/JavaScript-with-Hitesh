@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amezing Images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="Ocean" src="https://www.pexels.com/photo/inspiration-rock-1144263/" alt="Ocean"></li>
+            <li><img width="200px" id="macBookCode" src="https://www.pexels.com/photo/turned-on-macbook-pro-693859/" alt="macBookCode"></li>
+            <li><img width="200px" id="statueofliberty" src="https://www.pexels.com/photo/statue-of-liberty-miniature-on-macbook-pro-693865/" alt="statue-of-liberty"></li>
+            <li><img width="200px" id="NodeJsText" src="https://www.pexels.com/photo/person-holding-node-text-1261427/" alt="NodeJsText"></li>
+            <li><img width="200px" id="cat" src="https://www.pexels.com/photo/big-cat-cat-cat-face-cat-s-eyes-394649/" alt="Cat"></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('Ocean').onclick = function()    {
+    //     alert("Ocean Clicked")
+    // }  // This is Old method
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altKey, ctrlKey, shiftKey, KeyCode
+
+    // document.getElementById('images').addEventListener('click' , function(e){
+    //     // alert("Ocean Clicked again...!")
+    //     console.log("Clicked inside the ul");
+    // }, false)
+    // // upper false is called Event Propogation
+    // // Event Propogationis Divided in two thing
+    // /*
+    //     event bubling, event capturing
+    // */
+    // document.getElementById('Ocean').addEventListener('click' , function(e){
+    //     // alert("Ocean Clicked again...!")
+    //     console.log("Clicked on Ocean");
+    // }, false)
+    
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("Clicked on Google");
+    // }, false)
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        // console.log(e.target.parentNode);
+        console.log(e.target.tagName);
+        if(e.target.tagName === "IMG")
+        {
+            let removeIt = e.target.parentNode
+            console.log(e.target.id);
+            removeIt.remove();
+        }
+        
+        // removeIt.parentNode.removeChild(removeIt);
+    }, false)
+
+</script>
+</html>
